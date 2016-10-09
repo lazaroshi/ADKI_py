@@ -118,7 +118,7 @@ def drawmap_square(map, size, csource, name, prog):
 #the .mp3 file being converted
 def main(options, args):
     d = file(args).read()
-    base = os.path.basename(args[0])
+    base = os.path.basename(args)
     if "." in base:
         base, _ = base.rsplit(".", 1)
     dst = base + options.suffix + ".png"
